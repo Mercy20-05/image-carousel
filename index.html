@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Carousel / Slider</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="carousel-container" aria-label="Image Carousel">
+    <div class="carousel-track" id="carouselTrack">
+      <!-- 5 Slides with actual visual assets -->
+      <div class="carousel-slide" data-index="0">
+        <img src="image_1.png" alt="Misty mountain landscape" />
+        <div class="slide-caption">Slide 1: Mountain Vista</div>
+      </div>
+      <div class="carousel-slide" data-index="1">
+        <img src="image_2.png" alt="River winding through valley" />
+        <div class="slide-caption">Slide 2: River Valley</div>
+      </div>
+      <div class="carousel-slide" data-index="2">
+        <img src="image_3.png" alt="Moody ocean coastline" />
+        <div class="slide-caption">Slide 3: Coastal Cliffs</div>
+      </div>
+      <div class="carousel-slide" data-index="3">
+        <img src="image_4.png" alt="Canyon and dry hills" />
+        <div class="slide-caption">Slide 4: Desert Canyon</div>
+      </div>
+      <div class="carousel-slide" data-index="4">
+        <img src="image_5.png" alt="Forest trail bathed in light" />
+        <div class="slide-caption">Slide 5: Forest Path</div>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="nav-btn prev" id="prevBtn" aria-label="Previous Slide">&#10094;</button>
+    <button class="nav-btn next" id="nextBtn" aria-label="Next Slide">&#10095;</button>
+
+    <!-- Slide Indicator Dots -->
+    <div class="carousel-indicators" id="indicators">
+      <button class="dot active" data-index="0" aria-label="Go to slide 1"></button>
+      <button class="dot" data-index="1" aria-label="Go to slide 2"></button>
+      <button class="dot" data-index="2" aria-label="Go to slide 3"></button>
+      <button class="dot" data-index="3" aria-label="Go to slide 4"></button>
+      <button class="dot" data-index="4" aria-label="Go to slide 5"></button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
